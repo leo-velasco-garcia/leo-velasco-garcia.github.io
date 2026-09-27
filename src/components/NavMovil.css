@@ -1,0 +1,166 @@
+.Abierto {
+    box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: -16px 0px 160px  0px rgba(0, 0, 0, 0.5);
+    transition-delay: 200ms, 0ms, 0ms;
+}
+.Cerrado {
+    box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -16px 0px 160px  0px rgba(0, 0, 0, 0);
+    transform: translateX(100%);
+    opacity: 0;
+    transition-delay: 0ms, 500ms, 500ms;
+}
+.NavMovil{
+        display: none;
+    }
+
+@media screen and (max-width: 1024px) {
+    .NavMovil{
+        display: flex;
+    }
+}
+
+.NavMovil {
+    transition-property: transform, opacity, box-shadow;
+    transition-duration: 500ms, 200ms, 500ms;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+    background-color: var(--color-background);
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100%;
+    z-index: 999;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.NavMovil .linkhuno {
+    display: flex;
+    gap: .25rem;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+.NavMovil .linkhuno h1 {
+    font-family: "Overpass Mono", monospace;
+    transition: 200ms ease-in-out;
+}
+
+.NavMovil .linkhuno:hover h1 {
+    color: var(--color-text);
+}
+
+.NavMovil .linkhuno .cuadrado {
+    font-size: 1.5rem;
+    transform: translateY(1px) scale(80%);
+    transition: 200ms ease-in-out;
+}
+
+.NavMovil .linkhuno:hover .cuadrado {
+    color: var(--color-text);
+}
+
+
+.NavMovil .nav .navul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.NavMovil .nav .navul .navli {
+    font-family: "Overpass Mono", monospace;
+    transition: 200ms ease-in-out;
+    display: flex;
+    gap: .5rem;
+}
+
+.NavMovil .nav .navul .navli:hover {
+    color: var(--color-text);
+}
+
+.NavMovil .nav .navul .active .navli {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.NavMovil .nav .navul .navli .cuadrado {
+    transform: translateY(-3px) scale(80%);
+}
+
+
+.NavMovil .toggles {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+.NavMovil .toggles .idiomas {
+    display: flex;
+    gap: 0.25rem;
+    height: 100%;
+    align-items: center;
+    font-family: "Overpass mono", monospace;
+}
+
+.NavMovil .toggles .idiomas span {
+    color: var(--color-text);
+}
+
+.NavMovil .toggles .idiomas .btnidm {
+    color: var(--color-text-muted);
+    transition: 200ms ease-in-out;  
+}
+.NavMovil .toggles .idiomas .btnidm:hover {
+    color: var(--color-text);
+}
+
+.NavMovil .toggles .idiomas .btnidmactive {
+    color: var(--color-text);
+    font-weight: 600;
+}
+.NavMovil .toggles .temas {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: "Overpass mono", monospace;
+}
+
+.NavMovil .toggles .temas .barrita {
+    color: var(--color-text);
+}
+
+.NavMovil .toggles .temas button {
+    height: 1.25rem;
+    font-size: .5rem;
+}
+
+.NavMovil .toggles .temas button .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    transform: translateY(-1px);
+    transition: 200ms ease-in-out;
+}
+.NavMovil .toggles .temas button .material-symbols-outlined:hover{
+    color: var(--color-text);
+}
+.NavMovil .toggles .temas button .lleno{
+    font-variation-settings: 'FILL' 1;
+}
+
+.NavMovil .toggles .temas .btnthm {
+    color: var(--color-text-muted);
+}
+
+.NavMovil .toggles .temas .btnthmactive {
+    color: var(--color-text);
+}
+
+.NavMovil .botonesNav{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

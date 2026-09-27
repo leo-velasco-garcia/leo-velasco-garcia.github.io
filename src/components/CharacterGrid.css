@@ -1,0 +1,33 @@
+.character-grid {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), minmax(0, 1ch));
+    grid-template-rows: repeat(var(--rows), minmax(0, 1em));
+    width: auto;
+    height: auto;
+    overflow: clip;
+    color: var(--color-text-muted);
+    font-family: "Overpass Mono", monospace;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1em;
+    pointer-events: none;
+    user-select: none;
+    opacity: .25;
+}
+
+.app .character-grid{
+    opacity: .5;
+}
+
+.about .character-grid{
+    z-index: -90;
+}
+.character-grid span {
+    display: block;
+    width: 1ch;
+    height: 1em;
+    text-align: center;
+}

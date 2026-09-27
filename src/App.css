@@ -1,0 +1,148 @@
+.app {
+    font-family: "Overpass Mono", monospace;
+    background-color: var(--color-background);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app .centro {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: var(--color-text);
+    z-index: 2;
+}
+
+.app .centro h1 {
+    color: var(--color-text);
+    font-weight: 500;
+    pointer-events: none;
+    background-color: var(--color-background);
+    padding: .75rem 1rem .5rem 1rem;
+    transform: translateY(.2rem);
+    line-height: 1rem;
+}
+
+
+.app .centro .app_navul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+
+.app .centro .app_navul .app_navli {
+    display: flex;
+    color: var(--color-text-muted);
+    background-color: var(--color-background);
+    padding: .75rem 1rem .5rem 1rem;
+    transform: translateY(.2rem);
+}
+
+.invisible {
+    opacity: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.app .app_navul .app_navli .link {
+    display: flex;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    transition: 200ms ease-in-out;
+}
+
+.app .app_navul .app_navli .link:hover {
+    color: var(--color-text);
+}
+
+
+
+.app .toggles {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color-background);
+    padding: .5rem 1rem;
+}
+
+.app .toggles .idiomas {
+    display: flex;
+    gap: 0.25rem;
+    height: 100%;
+    align-items: center;
+    font-family: "Overpass mono", monospace;
+}
+
+.app .toggles .idiomas span {
+    color: var(--color-text);
+}
+
+.app .toggles .idiomas .btnidm {
+    color: var(--color-text-muted);
+    transition: 200ms ease-in-out;
+}
+
+.app .toggles .idiomas .btnidm:hover {
+    color: var(--color-text);
+}
+
+.app .toggles .idiomas .btnidmactive {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.app .toggles .temas {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: "Overpass mono", monospace;
+}
+
+.app .toggles .temas .barrita {
+    color: var(--color-text);
+}
+
+.app .toggles .temas button {
+    height: 1.25rem;
+    font-size: .5rem;
+}
+
+.app .toggles .temas button .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    transform: translateY(-1px);
+    transition: 200ms ease-in-out;
+}
+
+.app .toggles .temas button .material-symbols-outlined:hover {
+    color: var(--color-text);
+}
+
+.app .toggles .temas button .lleno {
+    font-variation-settings: 'FILL' 1;
+}
+
+.app .toggles .temas .btnthm {
+    color: var(--color-text-muted);
+}
+
+.app .toggles .temas .btnthmactive {
+    color: var(--color-text);
+}

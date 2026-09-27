@@ -1,0 +1,50 @@
+.NotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 100dvh;
+    background-color: var(--color-background);
+    gap: 1rem;
+    
+    animation-delay: 500ms;
+}
+
+.NotFound p{
+    color: var(--color-text-muted);
+}
+.NotFound .linknf{
+    display: flex;
+    color: var(--color-text);
+    z-index: 999;
+}
+
+.NotFound .linknf .flecha{
+    font-family: "Overpass Mono", monospace;
+    color: var(--color-text);
+    opacity: 0;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    font-weight: 100;
+    transform: scale(1.25) translateY(-2px);
+}
+
+.NotFound .linknf:hover .flecha{
+    opacity: 1;
+}
+
+.NotFound .sombra {
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 100dvh;
+    width: 100%;
+    background: var(--color-shadow);
+    background: radial-gradient(circle, var(--color-shadow) 0%, var(--color-shadow-transparent) 100%);
+    z-index: 0;
+}

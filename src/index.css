@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+:root {
+  --color-background: #f5f5f2;
+  --color-surface: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #5f5f5f;
+  --color-text-inverse: #ffffff;
+  --color-border: #5f5f5f;
+  --color-border-transparent: #5f5f5f00;
+  --color-tag-background: #17171718;
+  --color-shadow: rgba(255, 255, 255, 0.5);
+  --color-shadow-transparent: rgba(255, 255, 255, 0);
+  --color-grid: rgba(0, 0, 0, 0.28);
+}
+
+:root[data-theme="oscuro"] {
+  --color-background: #171717;
+  --color-surface: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: #b8b8b8;
+  --color-text-inverse: #171717;
+  --color-border: #b8b8b8;
+  --color-border-transparent: #b8b8b800;
+  --color-tag-background: #ffffff18;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-shadow-transparent: rgba(0, 0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-background: #171717;
+    --color-surface: #000000;
+    --color-text: #ffffff;
+    --color-text-muted: #b8b8b8;
+    --color-text-inverse: #171717;
+    --color-border: #b8b8b8;
+    --color-border-transparent: #b8b8b800;
+    --color-tag-background: #ffffff18;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-shadow-transparent: rgba(0, 0, 0, 0);
+    --color-grid: rgba(255, 255, 255, 0.24);
+    --color-grid: rgba(255, 255, 255, 0.24);
+  }
+}
+
+html, body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+#root {
+  min-height: 100dvh;
+  width: 100%;
+}
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+  font-family: inherit;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: revert;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+
+.rootLayout {
+  width: 100%;
+  height: 100dvh;
+  min-width: 0;
+  overflow: clip;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: clip;
+}
+
+#root {
+  position: fixed;
+  inset: 0;
+}
+

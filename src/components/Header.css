@@ -1,0 +1,155 @@
+.header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+}
+
+
+
+.header .linkhuno {
+    display: flex;
+    gap: .25rem;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+.header .linkhuno h1 {
+    font-family: "Overpass Mono", monospace;
+    transition: 200ms ease-in-out;
+}
+
+.header .linkhuno:hover h1 {
+    color: var(--color-text);
+}
+
+.header .linkhuno .cuadrado {
+    font-size: 1.5rem;
+    transform: translateY(1px) scale(80%);
+    transition: 200ms ease-in-out;
+}
+
+.header .linkhuno:hover .cuadrado {
+    color: var(--color-text);
+}
+
+
+
+.header .nav .navul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header .nav .navul .navli {
+    font-family: "Overpass Mono", monospace;
+    transition: 200ms ease-in-out;
+    display: flex;
+    gap: .5rem;
+}
+
+.header .nav .navul .navli:hover {
+    color: var(--color-text);
+}
+
+.header .nav .navul .active .navli {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.header .nav .navul .navli .cuadrado {
+    transform: translateY(-3px) scale(80%);
+}
+
+.header .botonesNav {
+    display: none;
+}
+
+.header .toggles {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.header .toggles .idiomas {
+    display: flex;
+    gap: 0.25rem;
+    height: 100%;
+    align-items: center;
+    font-family: "Overpass mono", monospace;
+}
+
+.header .toggles .idiomas span {
+    color: var(--color-text);
+}
+
+.header .toggles .idiomas .btnidm {
+    color: var(--color-text-muted);
+    transition: 200ms ease-in-out;  
+}
+.header .toggles .idiomas .btnidm:hover {
+    color: var(--color-text);
+}
+
+.header .toggles .idiomas .btnidmactive {
+    color: var(--color-text);
+    font-weight: 600;
+}
+.header .toggles .temas {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: "Overpass mono", monospace;
+}
+
+.header .toggles .temas .barrita {
+    color: var(--color-text);
+}
+
+.header .toggles .temas button {
+    height: 1.25rem;
+    font-size: .5rem;
+}
+
+.header .toggles .temas button .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    transform: translateY(-1px);
+    transition: 200ms ease-in-out;
+}
+.header .toggles .temas button .material-symbols-outlined:hover{
+    color: var(--color-text);
+}
+.header .toggles .temas button .lleno{
+    font-variation-settings: 'FILL' 1;
+}
+
+.header .toggles .temas .btnthm {
+    color: var(--color-text-muted);
+}
+
+.header .toggles .temas .btnthmactive {
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 1024px) {
+    .header .nav {
+        display: none;
+    }
+
+    .header .botonesNav {
+        display: block;
+    }
+
+    .header .oculto {
+        display: none;
+    }
+
+    .header .toggles {
+        display: none;
+    }
+}
