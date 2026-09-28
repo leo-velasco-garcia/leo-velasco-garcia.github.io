@@ -24,7 +24,7 @@ const App = () => {
             </Link>
           </li>
           <li className="app_navli" viewTransition>
-            <Link to={"/about"} className="link mono">
+            <Link to={"/contact"} className="link mono">
               {Language == "ES" ? "CONTACTO" : "CONTACT"}
             </Link>
           </li>
