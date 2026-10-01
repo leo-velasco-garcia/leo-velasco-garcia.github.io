@@ -18,6 +18,18 @@
             color: var(--color-text);
         }
     }
+
+    .centered-label {
+            display: block;
+            line-height: 1rem;
+            transform: translateY(-1px);
+        }
+
+        @supports (font: -apple-system-body) {
+            .centered-label {
+                transform: translateY(4px);
+            }
+        }
 }
 
 

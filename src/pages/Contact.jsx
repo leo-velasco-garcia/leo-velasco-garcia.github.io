@@ -13,7 +13,7 @@ const Contact = () => {
             <CharacterGrid variant="inward" originRef={mailRef}></CharacterGrid>
             <Header></Header>
             <div className="wrapper">
-                <a ref={mailRef} className='mail' target="_blank" href="mailto:leo.velasco.garcia@gmail.com">{Language == "ES" ? "Escríbeme" : "Email me"}</a>
+                <a ref={mailRef} className='mail centeredLabel' target="_blank" href="mailto:leo.velasco.garcia@gmail.com">{Language == "ES" ? "Escríbeme" : "Email me"}</a>
             </div>
         </div >
     )

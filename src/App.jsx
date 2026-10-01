@@ -11,21 +11,21 @@ const App = () => {
     <div className="app">
       <CharacterGrid />
       <div className="centro">
-        <h1>LEO VELASCO</h1>
+        <h1><span className="centered-label">LEO VELASCO</span></h1>
         <ul className="app_navul">
           <li className="app_navli">
             <Link to={"/work"} className="link mono" viewTransition>
-              {Language == "ES" ? "PORTFOLIO" : "WORK"}
+              <span className="centered-label">{Language == "ES" ? "PORTFOLIO" : "WORK"}</span>
             </Link>
           </li>
           <li className="app_navli" viewTransition>
             <Link to={"/about"} className="link mono">
-              {Language == "ES" ? "SOBRE MÍ" : "ABOUT"}
+              <span className="centered-label">{Language == "ES" ? "SOBRE MÍ" : "ABOUT"}</span>
             </Link>
           </li>
           <li className="app_navli" viewTransition>
             <Link to={"/contact"} className="link mono">
-              {Language == "ES" ? "CONTACTO" : "CONTACT"}
+              <span className="centered-label">{Language == "ES" ? "CONTACTO" : "CONTACT"}</span>
             </Link>
           </li>
         </ul>

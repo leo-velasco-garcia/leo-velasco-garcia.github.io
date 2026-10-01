@@ -17,13 +17,28 @@
         z-index: 2;
 
         h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: var(--color-text);
             font-weight: 500;
             pointer-events: none;
             background-color: var(--color-background);
-            padding: .75rem 1rem .5rem 1rem;
-            transform: translateY(.2rem);
+            height: 2.25rem;
+            padding: 0 1rem;
             line-height: 1rem;
+        }
+
+        .centered-label {
+            display: block;
+            line-height: 1rem;
+            transform: translateY(-1px);
+        }
+
+        @supports (font: -apple-system-body) {
+            .centered-label {
+                transform: translateY(4px);
+            }
         }
 
         .app_navul {
@@ -33,15 +48,18 @@
 
             .app_navli {
                 display: flex;
+                align-items: center;
                 color: var(--color-text-muted);
                 background-color: var(--color-background);
-                padding: .75rem 1rem .5rem 1rem;
-                transform: translateY(.2rem);
+                height: 2.25rem;
+                padding: 0 1rem;
 
                 .link {
                     display: flex;
+                    align-items: center;
                     font-weight: 400;
                     color: var(--color-text-muted);
+                    line-height: 1rem;
                     transition: 200ms ease-in-out;
 
                     &:hover {
