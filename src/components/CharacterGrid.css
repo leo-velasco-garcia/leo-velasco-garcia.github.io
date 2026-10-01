@@ -21,6 +21,9 @@
 .app .character-grid{
     opacity: .5;
 }
+.contact .character-grid{
+    opacity: .5;
+}
 
 .about .character-grid{
     z-index: -90;

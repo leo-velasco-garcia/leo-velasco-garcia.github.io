@@ -31,6 +31,7 @@
                 aspect-ratio: 1;
                 font-family: "Overpass Mono", monospace;
                 font-size: calc((100cqw - 4rem) / 35 * 1.6667);
+                font-weight: 500;
                 line-height: 1;
                 font-variant-ligatures: none;
                 white-space: pre;

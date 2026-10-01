@@ -44,7 +44,8 @@
   }
 }
 
-html, body {
+html,
+body {
   font-family: "Overpass", sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -73,6 +74,15 @@ body,
 *::before,
 *::after {
   box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -81,7 +91,10 @@ button {
   cursor: revert;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -182,4 +195,3 @@ body,
   position: fixed;
   inset: 0;
 }
-

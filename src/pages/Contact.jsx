@@ -2,17 +2,18 @@
 import Header from '../components/Header'
 import "./Contact.css"
 import { AppContext } from '../context/AppContext';
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
 import CharacterGrid from '../components/CharacterGrid';
 
 const Contact = () => {
     const { Language } = useContext(AppContext);
+    const mailRef = useRef(null);
     return (
-        <div>
-            <CharacterGrid></CharacterGrid>
+        <div className='contact'>
+            <CharacterGrid variant="inward" originRef={mailRef}></CharacterGrid>
             <Header></Header>
             <div className="wrapper">
-                <a className='mail' target="_blank" href="mailto:leo.velasco.garcia@gmail.com">{Language == "ES" ? "Escríbeme" : "Email me"}</a>
+                <a ref={mailRef} className='mail' target="_blank" href="mailto:leo.velasco.garcia@gmail.com">{Language == "ES" ? "Escríbeme" : "Email me"}</a>
             </div>
         </div >
     )

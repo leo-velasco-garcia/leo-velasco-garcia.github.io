@@ -45,9 +45,9 @@ X7¨           .XP \\XXXX7]X      XX
                :XXXXXXXXXXb.
               dXP^¨   \`¨^XXX.
              dX^         ºXXX.
-            aXX¨          ^XXb
-           dXXX =”””  \`””¬¨XXX
-         JXXXXX            XXXL
+            aXX¨          XXXb
+           dXXX =^””  \`””= XXX.
+         JXXXXX  <6>   <6> XXXL
         AXXXXXP            XXXX
        nXXXXXX!            XXXX
       .XXXXXXXb   …== ==.  XXXXL

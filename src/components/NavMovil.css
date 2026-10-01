@@ -1,21 +1,23 @@
 .Abierto {
     box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0);
-    -webkit-box-shadow: -16px 0px 160px  0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0.5);
     transition-delay: 200ms, 0ms, 0ms;
 }
+
 .Cerrado {
     box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: -16px 0px 160px  0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: -16px 0px 160px 0px rgba(0, 0, 0, 0);
     transform: translateX(100%);
     opacity: 0;
     transition-delay: 0ms, 500ms, 500ms;
 }
-.NavMovil{
-        display: none;
-    }
+
+.NavMovil {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
-    .NavMovil{
+    .NavMovil {
         display: flex;
     }
 }
@@ -35,56 +37,61 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    .linkhuno {
+        display: flex;
+        gap: .25rem;
+        align-items: baseline;
+        font-size: 1rem;
+
+        h1 {
+            font-family: "Overpass Mono", monospace;
+            transition: 200ms ease-in-out;
+        }
+
+        .cuadrado {
+            font-size: 1.5rem;
+            transform: translateY(1px) scale(80%);
+            transition: 200ms ease-in-out;
+        }
+
+        &:hover {
+            h1 {
+                color: var(--color-text);
+            }
+
+            .cuadrado {
+                color: var(--color-text);
+            }
+        }
+    }
+
+    .nav {
+        .navul {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            .navli {
+                font-family: "Overpass Mono", monospace;
+                transition: 200ms ease-in-out;
+                display: flex;
+                gap: .5rem;
+
+                &:hover {
+                    color: var(--color-text);
+                }
+            }
+
+            .active .navli {
+                color: var(--color-text);
+                font-weight: 600;
+            }
+        }
+    }
 }
 
-.NavMovil .linkhuno {
-    display: flex;
-    gap: .25rem;
-    align-items: baseline;
-    font-size: 1rem;
-}
 
-.NavMovil .linkhuno h1 {
-    font-family: "Overpass Mono", monospace;
-    transition: 200ms ease-in-out;
-}
-
-.NavMovil .linkhuno:hover h1 {
-    color: var(--color-text);
-}
-
-.NavMovil .linkhuno .cuadrado {
-    font-size: 1.5rem;
-    transform: translateY(1px) scale(80%);
-    transition: 200ms ease-in-out;
-}
-
-.NavMovil .linkhuno:hover .cuadrado {
-    color: var(--color-text);
-}
-
-
-.NavMovil .nav .navul {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.NavMovil .nav .navul .navli {
-    font-family: "Overpass Mono", monospace;
-    transition: 200ms ease-in-out;
-    display: flex;
-    gap: .5rem;
-}
-
-.NavMovil .nav .navul .navli:hover {
-    color: var(--color-text);
-}
-
-.NavMovil .nav .navul .active .navli {
-    color: var(--color-text);
-    font-weight: 600;
-}
 
 .NavMovil .nav .navul .navli .cuadrado {
     transform: translateY(-3px) scale(80%);
@@ -111,8 +118,9 @@
 
 .NavMovil .toggles .idiomas .btnidm {
     color: var(--color-text-muted);
-    transition: 200ms ease-in-out;  
+    transition: 200ms ease-in-out;
 }
+
 .NavMovil .toggles .idiomas .btnidm:hover {
     color: var(--color-text);
 }
@@ -121,6 +129,7 @@
     color: var(--color-text);
     font-weight: 600;
 }
+
 .NavMovil .toggles .temas {
     display: flex;
     align-items: center;
@@ -144,10 +153,12 @@
     transform: translateY(-1px);
     transition: 200ms ease-in-out;
 }
-.NavMovil .toggles .temas button .material-symbols-outlined:hover{
+
+.NavMovil .toggles .temas button .material-symbols-outlined:hover {
     color: var(--color-text);
 }
-.NavMovil .toggles .temas button .lleno{
+
+.NavMovil .toggles .temas button .lleno {
     font-variation-settings: 'FILL' 1;
 }
 
@@ -159,7 +170,7 @@
     color: var(--color-text);
 }
 
-.NavMovil .botonesNav{
+.NavMovil .botonesNav {
     position: absolute;
     top: 1rem;
     right: 1rem;
