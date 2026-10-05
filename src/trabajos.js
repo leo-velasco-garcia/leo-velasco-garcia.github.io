@@ -54,6 +54,26 @@ const trabajos = [
         "descripcionES": "La identidad de esta banda se inspira en torres de telecomunicaciones de las periferias urbanas, símbolos del contraste entre tecnología y naturaleza. El logotipo combina una tipografía monoespaciada con dos “oes” construidas a partir de elementos de una antena, y se plantea para poder cambiar la tipografía con cada disco y mantener la esencia con las “oes”. La identidad es flexible, pues convive habitualmente con las de salas y otras bandas."
     },
     {
+        "nombreEN": "Cesida",
+        "nombreES": "Cesida",
+        "subtituloEN": "Rebranding for a NGO",
+        "subtituloES": "Rediseño de una ONG",
+        "tagsEN": ["Brand identity", "Motion graphics", "Web design", "Academic work"],
+        "tagsES": ["Identidad de marca", "Motion graphics", "Diseño web", "Proyecto académico"],
+        "media": [
+            { "tipo": "vimeo", "pieEN": "Brand promotional video", "pieES": "Vídeo promocional de la marca", "url": "https://player.vimeo.com/video/1181519216?badge=0;autopause=0;player_id=0;app_id=58479" },
+            { "tipo": "img", "pieEN": "Event poster", "pieES": "Cartel de un evento" },
+            { "tipo": "img", "pieEN": "Promotional posters featuring the brand pattern", "pieES": "Pósters promocionales con el patrón de la marca" },
+            { "tipo": "img", "pieEN": "Bus stop poster featuring another variation of the brand pattern", "pieES": "Mupi con otra de las variantes del patrón de la marca" },
+            { "tipo": "img", "pieEN": "Billboard encouraging people to get tested", "pieES": "Valla publicitaria para fomentar la prueba" },
+            { "tipo": "vimeo", "pieEN": "Campaign: Undetectable = Untransmittable I", "pieES": "Campaña Indetectable = Intransmisible I", "url": "https://player.vimeo.com/video/1181522513?badge=0;autopause=0;player_id=0;app_id=58479" },
+            { "tipo": "vimeo", "pieEN": "Campaign: Undetectable = Untransmittable II", "pieES": "Campaña Indetectable = Intransmisible II", "url": "https://player.vimeo.com/video/1181524554?badge=0;autopause=0;player_id=0;app_id=58479" },
+            { "tipo": "vimeo", "pieEN": "Campaign: Undetectable = Untransmittable III", "pieES": "Campaña Indetectable = Intransmisible III", "url": "https://player.vimeo.com/video/1181525318?badge=0;autopause=0;player_id=0;app_id=58479" }
+        ],
+        "descripcionEN": "A project developed with Daniel Aznar and Jorge Blas to redesign Cesida, the Spanish national coordinator of AIDS associations. Inspired by Conway’s Game of Life, the identity is dynamic and flexible, bringing together the organizations and people that make up Cesida. The project also includes an audiovisual campaign exploring the relationship between a virus becoming undetectable through treatment and its untransmissibility, using sex —a taboo subject— as a way to attract attention.",
+        "descripcionES": "Proyecto realizado junto a Daniel Aznar y Jorge Blas para rediseñar Cesida, coordinadora estatal de asociaciones del Sida. Inspirada en el Juego de la Vida de Conway, la identidad es dinámica y flexible, capaz de aglutinar a las entidades y personas que forman parte de Cesida. Se desarrolla además una campaña audiovisual sobre la relación entre un virus indetectable gracias al tratamiento y su intransmisibilidad, utilizando el sexo, tema tabú, como reclamo."
+    },
+    {
         "nombreEN": "Or Roig",
         "nombreES": "Or Roig",
         "subtituloEN": "Packaging design for a gourmet saffron",

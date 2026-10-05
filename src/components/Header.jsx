@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header className="header">
             <Link to={"/"} className='linkhuno'>
-                <h1 className='navli'>LEO VELASCO</h1>
+                <h1 className='navli'>LEO VELASCO GARCÍA</h1>
             </Link>
             <nav className="nav">
                 <ul className="navul">
