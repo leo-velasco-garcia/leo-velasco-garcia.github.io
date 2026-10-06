@@ -95,6 +95,14 @@ XXXXXXXXXXXXXXX:   .xXXXXXXXXXXXXX`}
                         <div className="item">
                             <span className="cuadr">■</span>
                             <div className="itemContent">
+                                <h3>{Language === "ES" ? "Grupo de Internet de Nueva Generación (GING) en la Facultad de Telecomunicaciones de la UPM":"New Generation Internet Group (GING) at the UPM School of Telecommunications"}</h3>
+                                <p>{Language === 'ES' ? "Prácticas como desarrollador front-end (React) y diseñador web" : "Internship as a Frontend Developer (React) and Web Designer"}</p>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <span className="cuadr">■</span>
+                            <div className="itemContent">
                                 <h3>La Esfera de los Libros</h3>
                                 <p>{Language === 'ES' ? "Mapas para el libro “Zaragoza. Ciudad Inmortal”" : "Maps for the book ‘Zaragoza. Ciudad Inmortal’"}</p>
                                 <p>{Language === 'ES' ? "Maquetación para el libro “El Gran Libro de la Mitología Nórdica”" : "Layout design for the book 'El Gran Libro de la Mitología Nórdica'"}</p>
