@@ -73,14 +73,12 @@ XXXXXXXXXXXXXXX:   .xXXXXXXXXXXXXX`}
                             </div>
                         </div>
                         <div className="item">
-                            {/* <span className="cuadr">■</span> */}
                             <div className="itemContent">
                                 <h3>Software</h3>
                                 <p>Illustrator</p>
                                 <p>InDesign</p>
                                 <p>Photoshop</p>
                                 <p>AfterEffects</p>
-                                <p>Cinema4D</p>
                                 <p>Figma</p>
                                 <p>HTML</p>
                                 <p>Css</p>
